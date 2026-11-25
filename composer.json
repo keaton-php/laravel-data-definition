@@ -1,0 +1,63 @@
+{
+    "name": "keaton-php/laravel-data-definition",
+    "description": "Immutable array wrappers for Laravel: short aliases for deep payload paths, Laravel-native casts, nothing writable.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "dto",
+        "data-object",
+        "array-wrapper",
+        "casts",
+        "immutable",
+        "api-payload",
+        "keaton-php"
+    ],
+    "homepage": "https://github.com/keaton-php/laravel-data-definition",
+    "support": {
+        "issues": "https://github.com/keaton-php/laravel-data-definition/issues",
+        "source": "https://github.com/keaton-php/laravel-data-definition",
+        "docs": "https://kevineaton.dev/docs/laravel-data-definition/",
+        "security": "https://github.com/keaton-php/laravel-data-definition/security/policy"
+    },
+    "authors": [
+        {
+            "name": "Kevin Eaton",
+            "email": "kevin@kevineaton.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.33.2||^12.0||^13.0",
+        "illuminate/database": "^11.33.2||^12.0||^13.0",
+        "illuminate/support": "^11.33.2||^12.0||^13.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18",
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^11.5||^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keaton\\DataDefinition\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Keaton\\DataDefinition\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "analyse": "vendor/bin/phpstan analyse --memory-limit=1G",
+        "format": "vendor/bin/pint",
+        "lint": "vendor/bin/pint --test"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

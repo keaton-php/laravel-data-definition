@@ -1,0 +1,17 @@
+parameters:
+    # Level 8 is the gate for every package.
+    level: 8
+
+    paths:
+        - src
+        - tests
+
+    excludePaths:
+        - tests/Fixtures/DocsHelpers.php
+
+    # Do not trust a docblock over the signature.
+    treatPhpDocTypesAsCertain: false
+
+    # A definition reads any key as a property through __get().
+    universalObjectCratesClasses:
+        - Keaton\DataDefinition\DataDefinition
